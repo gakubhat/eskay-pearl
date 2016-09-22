@@ -27,4 +27,4 @@ class DataStore {
     }
 }
 
-export default new DataStore;
+export default new DataStore;   

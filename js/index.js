@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './main.jsx';
+import Main from './Contents.js';
 
 window.onload = function(){
   ReactDOM.render(<Main />, document.getElementById("contents"));

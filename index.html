@@ -2,19 +2,19 @@
 <html>
   <head>
     <title>electron es6 react boilerplate</title>
+    <link rel="stylesheet" href="semantic/semantic.min.css">
   </head>
 
   <body>
   <script>
+      window.$ = window.jQuery = require('jquery')
+  </script>
+  <script src="semantic/semantic.js"></script>
+  <script>
       // install babel hooks in the renderer process
       require('babel-register');
-      require('./components');
+      require('./js');
   </script>
-  <h1>Hello World!</h1>
-  <!-- All of the Node.js APIs are available in this renderer process. -->
-  We are using node <script>document.write(process.versions.node)</script>,
-  Chromium <script>document.write(process.versions.chrome)</script>,
-  and Electron <script>document.write(process.versions.electron)</script>.
   <div id="contents"></div>
   </body>
 </html>
